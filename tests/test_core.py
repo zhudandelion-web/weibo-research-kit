@@ -42,13 +42,13 @@ class ArchiveTests(unittest.TestCase):
         self.archive.save(result("a","=IMPORTXML(恶意示例)"))
         path = Path(self.tmp.name)/"sample.csv"
         self.assertEqual(self.archive.export(path,"csv",run_id="a"),1)
-        self.assertIn("'=IMPORTXML",path.read_text())
-        self.assertIn("'5352926253944902",path.read_text())
+        self.assertIn("'=IMPORTXML",path.read_text(encoding="utf-8"))
+        self.assertIn("'5352926253944902",path.read_text(encoding="utf-8"))
         with self.assertRaises(FileExistsError):
             self.archive.export(path,"csv")
         j = Path(self.tmp.name)/"sample.jsonl"
         self.archive.export(j,run_id="a")
-        self.assertEqual(json.loads(j.read_text())["plain_text"],"=IMPORTXML(恶意示例)")
+        self.assertEqual(json.loads(j.read_text(encoding="utf-8"))["plain_text"],"=IMPORTXML(恶意示例)")
 
     def test_private_files_and_profile_separation(self):
         self.archive.save(result("a","示例"))
