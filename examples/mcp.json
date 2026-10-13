@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "weibo-research": {
+      "command": "/ABSOLUTE/PATH/.venv/bin/weibo-research",
+      "args": [
+        "serve"
+      ]
+    }
+  }
+}

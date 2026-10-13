@@ -1,0 +1,14 @@
+name: Research workflow / 研究场景
+description: Tell us what public-material research you want to complete.
+body:
+  - type: textarea
+    id: task
+    attributes:
+      label: What task are you trying to complete? / 研究任务
+      description: Describe a public research task without private identifiers or datasets.
+    validations:
+      required: true
+  - type: textarea
+    id: gap
+    attributes:
+      label: What is missing in the current workflow? / 当前缺口

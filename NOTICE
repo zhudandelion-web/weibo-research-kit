@@ -1,0 +1,7 @@
+Weibo Research Kit is a research-layer derivative of the local guest-only wrapper developed with AI assistance.
+The data-access dependency is qinyuanpei/mcp-server-weibo, pinned to version 1.3.4, MIT, Copyright (c) 2025 Payne.
+Source: https://github.com/qinyuanpei/mcp-server-weibo
+The complete upstream MIT license is preserved in licenses/mcp-server-weibo-MIT.txt.
+No upstream source tree or third-party binaries are vendored. Dependencies are installed from their package distributions and retain their own licenses.
+The upstream project credits RicterZ/mcp-server-weibo for optional QR login; this kit does not expose that functionality.
+This kit is independent of Weibo/Sina and OpenAI. No user datasets, login sessions, API credentials or personal deployment configuration are distributed.

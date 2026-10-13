@@ -1,0 +1,26 @@
+name: Bug report / 问题反馈
+description: Report a reproducible installation, tool or archive issue.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include passwords, cookies, keys, login codes or databases. 空结果不能证明没有内容。"
+  - type: input
+    id: environment
+    attributes:
+      label: OS and Python version / 环境
+      placeholder: macOS 15, Python 3.12
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps and expected result / 操作及预期
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Actual result and redacted status / 实际结果
+    validations:
+      required: true

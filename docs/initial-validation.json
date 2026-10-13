@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-10-13T02:56:25.807336+00:00",
+  "clean_environment_install": true,
+  "mcp_initialize": "passed",
+  "tools": [
+    "search_content",
+    "search_users",
+    "get_profile",
+    "get_feeds",
+    "get_trendings",
+    "get_comments",
+    "search_saved_weibo"
+  ],
+  "all_tools_read_only": true,
+  "invalid_limit_rejected": true,
+  "trending": {
+    "status": "public_sample",
+    "count": 2
+  },
+  "live_search": {
+    "status": "public_sample",
+    "count": 2,
+    "guest_only": true,
+    "archive_status": "saved"
+  },
+  "run_snapshot_search_count": 2,
+  "platform_tested": "macOS arm64, Python 3.12",
+  "other_os_ci_executed": false,
+  "long_term_availability_verified": false,
+  "offline_tests_passed": 12
+}
